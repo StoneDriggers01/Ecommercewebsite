@@ -1,0 +1,74 @@
+body{
+    background-image: url(images/osb\ inverted.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+header{
+    display: block;
+    padding: 10px;
+}
+.navbar{
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    padding:10px;
+}
+section{
+    width:400px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gallery{
+    border:2px solid hsl(0,0%,60%);
+    margin:5px;
+    width:200px;
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content:center;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gallery .discription{
+    padding: 10px;
+    text-align: center;
+    color:bisque;
+    justify-content: center;
+}
+footer{
+    display: block;
+    padding: 10px;
+}
+h1{
+    color:bisque;
+    text-align: center;
+}
+h3{
+    color:bisque;
+    text-align: center;
+}
+#p1{
+    color:bisque;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#b1{
+    background-color: bisque; 
+    font-size: 25px; 
+    color: black; border-radius: 10px;
+}
+
+@media screen and (max-width:600px){
+    section, .navbar, header, footer{width:100%}
+}
