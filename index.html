@@ -1,73 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Landing Page</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header style="background-color: black">
-            <h1>Plywood</h1>
-            <h3>Connecting Scavengers Everywhere</h3>
-        </header>
-                <hr>
-    <nav class="navbar">
-        <a href="search.html">
-            <button id="b1" href>Search</button>
-        </a>
-        <a href="specials.html">
-            <button id="b1" href>Specials</button>
-        </a>
-        <a href="categories.html">
-            <button id="b1" href>Categories</button>
-        </a>
-        <a href="recommended.html">
-            <button id="b1" href>Recommended</button>
-        </a>
-        <a href="Support.html">
-            <button id="b1" href>Support</button>
-        </a>
-        <a href="Log In.html">
-            <button id="b1" href>Log In</button>
-        </a>
-    </nav>
-        <hr>
-        <section>
-            <h3>
-            Our Mission
-            </h3>
-            <p id="p1">
-            Plywood is an open marketplace for small thrift stores to display their good online. Plywood will show you what an item is worth, where it is located, and help you get in contact with a store so your treasure is ready for you when you arrive to pick it up. Alternatevely, you can also contact a store an inquire about shipping services through our system. Join today and start scavenging!
-            </p>
-        </section>
-        <div class="gallery">
-            <a target="_blank" href="images/tv.png">
-               <img src="images/tv.png" alt="tv">
-               <div id="p1">TVs</div> 
-            </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plywood – Connecting Scavengers Everywhere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-overlay"></div>
+
+        <nav class="nav-buttons">
+            <button>Search</button>
+            <button>Specials</button>
+            <button>Categories</button>
+            <button>Recommended</button>
+            <button>Support</button>
+            <button class="login-btn">Login</button>
+
+            <!-- 🌙 Theme Toggle -->
+            <button id="theme-toggle" class="theme-toggle">Dark Mode</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Connecting Scavengers Everywhere</h1>
+        <p>Discover hidden gems from local antique stores, curated just for you.</p>
+        <a href="products.html" class="cta">Start Exploring</a>
+    </section>
+
+    <section class="features">
+    <div class="feature-card">
+        <h2>Location-Based Results</h2>
+        <p>Find thrift treasures near you with smart, geo-aware browsing.</p>
+    </div>
+    <div class="feature-card">
+        <h2>Personalized Recommendations</h2>
+        <p>See items tailored to your taste, updated daily.</p>
+    </div>
+</section>
+
+    <section class="gallery">
+        <h2>Featured Finds</h2>
+        <div class="scroll-container">
+            <div class="gallery-track">
+                <img src="images/phones.png" alt="Vintage Phones">
+                <img src="images/tv.png" alt="Retro TV">
+                <img src="images/typewriter.png" alt="Classic Typewriter">
+                <img src="images/clothes.png" alt="Clothes">
+                <img src="images/clothes2.png" alt="Clothes 2">
+                <img src="images/antiquestore.png" alt="Antique Store">
+
+                <!-- Duplicate for seamless loop -->
+                <img src="images/phones.png" alt="Vintage Phones">
+                <img src="images/tv.png" alt="Retro TV">
+                <img src="images/typewriter.png" alt="Classic Typewriter">
+                <img src="images/clothes.png" alt="Clothes">
+                <img src="images/clothes2.png" alt="Clothes 2">
+                <img src="images/antiquestore.png" alt="Antique Store">
+            </div>
         </div>
-        <div class="gallery">
-            <a target="_blank" href="images/typewriter.png">
-               <img src="images/typewriter.png" alt="Books and Typewriters"> 
-               <div id="p1">Books and Typewriters</div>
-            </a>
-        </div>
-        <div class="gallery">
-            <a target="_blank" href="images/phones.png">
-               <img src="images/phones.png" alt="Phones"> 
-            </a>
-            <div id="p1">Phones</div>
-        </div>
-        <footer style="background-color: black; text-align: center;">
-            <p id="p1">
-            © Plywood Ltd.
-            </p>
-        </footer>
-    </body>
+    </section>
+
+    <footer>
+        <p>© 2026 Plywood — Connecting Scavengers Everywhere</p>
+    </footer>
+    <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("light-mode");
+
+        // Update button text
+        if (body.classList.contains("light-mode")) {
+            toggleBtn.textContent = "Dark Mode";
+        } else {
+            toggleBtn.textContent = "Light Mode";
+        }
+    });
+</script>
+
+</body>
 </html>
-<!--Features to add:
-    -Location Based Search Results and Recommended
-    -User Interface
-    -Images/Video/Branding
-    -Sorting for Categories
--->
